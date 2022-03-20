@@ -1,0 +1,113 @@
+body {
+    font-family: Tahoma;
+  	background-color: #232F3E;
+  	margin: auto;
+}
+.login{
+  	width: 400px;
+  	background-color: #ffffff;
+  	margin: 250px auto;
+}
+.login h1{
+  	text-align: center;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+  	border-bottom: 1px solid #dee0e4;
+}
+.login form, .upload form, .dbusers form {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	padding-top: 20px;
+}
+.login form label, .upload form label, .dbusers form label{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+  	height: 50px;
+  	background-color: #FF8C00;
+  	color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"]{
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
+.login form input[type="submit"], .upload form input[type="submit"], .dbusers form input[type="submit"]{
+  	width: 100%;
+  	padding: 15px;
+  	margin-top: 20px;
+  	background-color: #FF8C00;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover, .upload form input[type="submit"]:hover, .dbusers form input[type="submit"]:hover{
+  	background-color: #F86B06;
+  	transition: background-color 0.2s;
+}
+.upload, .logout, .dbusers{
+    text-align: center;
+    color: #232F3E;
+    font-size: 24px;
+}
+.usersborder{
+    text-align: left;
+    color: #232F3E;
+    font-size: 20px;
+    width: 340px;
+    min-height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+}
+.upload h1, .dbusers h1{
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+#dbusers {
+    float:left;
+    width:400px;
+    margin:250px;
+    background-color:#ffffff;
+}
+#s3file {
+    float:right;
+    width:400px;
+    margin:250px;
+    background-color:#ffffff;
+}
+.upload form input[type="file"]{
+    width: 340px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+}
+.logout {
+    width: 50px;
+    height: 50px;
+    background-color: #FF8C00;
+    color: #ffffff;
+}
+.logout:hover {
+    background-color: #F86B06;
+}
+a:visited {
+    color: #ffffff;
+}
+.smallfont {
+    font-size: 16px;
+}
+.logoutbn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}

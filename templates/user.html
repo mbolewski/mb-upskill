@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        PGS Upskill
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+
+<body>
+<div class="logout">
+    <a href="/logout">
+        <div class="logoutbn">
+        <label for="logout">
+            <i class="fas fa-sign-out-alt"></i>
+        </label>
+        </div>
+    </a>
+</div>
+<div class="dbusers">
+    <div id="dbusers">
+        <h1>User list</h1>
+        <form action="/dbusers" method="post" enctype="multipart/form-data">
+            <label for="dbusers">
+                <i class="fas fa-user-friends"></i>
+            </label>
+            <div class="usersborder">
+                <ol>
+                    {% for item in data %}
+                    <li>{{item}}</li>
+
+                    {% endfor %}
+                </ol>
+            </div>
+            <input type="submit" class="smallfont" value="Show users">
+        </form>
+    </div>
+    <div id="s3file">
+        <div class="upload">
+            <h1>Upload file to AWS S3</h1>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="upload">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </label>
+                <input type="file" name="file" value="file" required>
+                <div class="smallfont">{{ msg }}</div>
+                <input type="submit" class="smallfont" value="Upload">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
